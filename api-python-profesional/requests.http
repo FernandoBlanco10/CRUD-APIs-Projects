@@ -1,0 +1,26 @@
+GET http://localhost:5001/songs HTTP/1.1
+
+###
+GET http://localhost:5001/songs/2 HTTP/1.1
+
+###
+POST http://localhost:5001/songs HTTP/1.1
+content-type: application/json
+
+{
+    "titulo": "Aquellos que no fui",
+    "artista": "WK",
+    "album": "Trópico de Cancer",
+    "año": 2012
+}
+
+###
+PUT http://localhost:5001/songs/2 HTTP/1.1
+content-type: application/json
+
+{
+    "año": 1972
+}
+
+###
+DELETE http://localhost:5001/songs/3 HTTP/1.1

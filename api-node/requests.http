@@ -1,0 +1,26 @@
+GET http://localhost:3000/songs HTTP/1.1
+
+###
+GET http://localhost:3000/songs/2 HTTP/1.1
+
+###
+POST http://localhost:3000/songs HTTP/1.1
+content-type: application/json
+
+{
+    "titulo": "Mátame Despacio",
+    "artista": "WK",
+    "album": "Trópico de Cancer",
+    "año": 2012
+}
+
+###
+PUT http://localhost:3000/songs/3 HTTP/1.1
+content-type: application/json
+
+{
+    "año": 2002
+}
+
+###
+DELETE http://localhost:3000/songs/3 HTTP/1.1
