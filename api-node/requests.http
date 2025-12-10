@@ -8,7 +8,7 @@ POST http://localhost:3000/songs HTTP/1.1
 content-type: application/json
 
 {
-    "titulo": "Mátame Despacio",
+    "titulo": "Hablame de nosotros",
     "artista": "WK",
     "album": "Trópico de Cancer",
     "año": 2012
