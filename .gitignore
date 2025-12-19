@@ -1,3 +1,21 @@
+# Node
 node_modules/
+
+# Python
 venv/
+.venv/
 __pycache__/
+*.pyc
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
