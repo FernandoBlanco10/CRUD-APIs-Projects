@@ -19,7 +19,6 @@ Este proyecto contiene **tres implementaciones diferentes** de una API CRUD para
 |-----|------------|--------|-------------|----------------|
 | **api-node** | Node.js + Express | 3000 | Básica | CRUD simple, JSON file storage |
 | **api-python** | Python + Flask | 5001 | Intermedia | CRUD mejorado, mejor validación |
-| **api-python-profesional** | Python + Flask + Pydantic | 5001 | Avanzada | Full-featured, tests, docs, logging |
 
 ## 🎯 Características Principales
 
