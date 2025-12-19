@@ -57,15 +57,6 @@ API CRUD/
 │   ├── db.json           # Base de datos JSON
 │   ├── .gitignore        # Ignorar archivos Python
 │   └── requests.http     # Documentación HTTP
-├── api-python-profesional/ # Implementación Python avanzada
-│   ├── app.py            # Aplicación Flask profesional
-│   ├── main.py           # Punto de entrada
-│   ├── config/           # Configuración
-│   ├── models/           # Modelos de datos
-│   ├── services/         # Servicios
-│   ├── tests/            # Tests automatizados
-│   ├── requirements.txt  # Dependencias Python
-│   └── README.md         # Documentación específica
 └── README.md             # Este archivo
 ```
 
@@ -111,24 +102,6 @@ source venv/bin/activate
 
 pip install Flask
 python main.py
-```
-
-**Servidor disponible en:** `http://localhost:5001`
-
-### Opción 3: API Python Profesional (api-python-profesional) 🔵
-
-```bash
-cd api-python-profesional
-python -m venv venv
-
-# Activar entorno virtual
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-pip install -r requirements.txt
-python app.py
 ```
 
 **Servidor disponible en:** `http://localhost:5001`
@@ -250,7 +223,6 @@ Cada implementación incluye archivos `requests.http` para testing manual:
 
 - **api-node/requests.http** - Testing para API Node.js
 - **api-python/requests.http** - Testing para API Python básica
-- **api-python-profesional/requests.http** - Testing para API Python profesional
 
 ### Testing con Postman
 
@@ -285,54 +257,7 @@ Puedes importar los archivos `.http` en Postman o crear requests manuales siguie
 - **Ideal para**: Aprendizaje, proyectos pequeños
 - **Puerto**: 5001
 
-### api-python-profesional (Flask avanzada)
-- **Ventajas**: Producción-ready, escalable, bien documentado
-- **Ideal para**: Proyectos profesionales, equipos
-- **Puerto**: 5001
-
 ## 🔧 Configuración Adicional
-
-### Variables de Entorno (api-python-profesional)
-
-```bash
-# Copiar archivo de ejemplo
-cp api-python-profesional/.env.example api-python-profesional/.env
-
-# Editar configuración
-DEBUG=true
-HOST=localhost
-PORT=5001
-```
-
-### Dependencias
-
-#### Node.js (api-node)
-```bash
-npm install express
-```
-
-#### Python (api-python)
-```bash
-pip install Flask
-```
-
-#### Python Profesional (api-python-profesional)
-```bash
-pip install -r requirements.txt
-```
-
-## 🚀 Deployment
-
-### Desarrollo Local
-Sigue las instrucciones de ejecución según la API que desees usar.
-
-### Producción
-
-#### Para api-python-profesional (recomendado para producción):
-```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5001 app:app
-```
 
 #### Para api-node:
 ```bash
